@@ -36,10 +36,6 @@ def get_newest_news(tickerSymbol: str) -> str:
     return(getNews(tickerSymbol, sourcesList))
     
 
-    
-if __name__ == "__main__":
-    get_newest_news("TSLA")
-
 
 
 
