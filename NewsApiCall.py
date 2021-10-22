@@ -3,18 +3,8 @@ from credentials import apiKey
 import requests
 from requests.auth import HTTPBasicAuth
 
-
-
 lenList = []
 sourcesList = ['Bloomberg','CNBC','The-Wall-Street-Journal','Ars-Technica','Recode','Wired']
-
-# Function to check source name aganist list of sources to not use
-def isNotSource(testSource):
-    for n in range(len(notSourceList)):
-        if (testSource == notSourceList[n]):
-            return True
-    return False
-
 
 def getNews(ticker_symbol: str, sources: list) -> str:
     # Forms the url in order to make the http request
