@@ -13,7 +13,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name('StockTracer-16a2
 # Authorizes requests
 gc = gspread.authorize(credentials)
 # Sets var wks equal to the spreadsheet that we are using
-wks = gc.open('test').sheet1
+wks = gc.open('Stock Tracking').sheet1
 
 def stockInput():
     #This is the function used to input the stock 
